@@ -29,8 +29,7 @@ export default class Blank extends React.Component {
     <View>
       <CheckBox
         title="Radio button"
-        checkedIcon="dot-circle-o"
-        uncheckedIcon="circle-o"
+        containerStyle={styles.CheckBox_3}
         checked={this.state.CheckBox_3}
         onPress={nextChecked => this.setState({ CheckBox_3: nextChecked })}
       />
@@ -43,6 +42,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  CheckBox_3: {}
+  CheckBox_3: {},
+  View_1: {},
+  CheckBox_3: { lineHeight: 24 }
 })
